@@ -6,10 +6,10 @@ A plugin that helps you build Claude Code extensions — skills, agents, command
 
 ```bash
 # From local marketplace
-/plugin install claude-extension-toolkit@sirtaj-plugins
+/plugin install agent-extension-toolkit@sirtaj-plugins
 
 # Or for development
-claude --plugin-dir ./claude-extension-toolkit
+claude --plugin-dir ./agent-extension-toolkit
 ```
 
 ## Usage
@@ -71,7 +71,7 @@ Everything below is for people working on or extending this toolkit.
 ### Architecture
 
 ```
-claude-extension-toolkit/
+agent-extension-toolkit/
 ├── skills/extension-toolkit/    # Interactive skill
 │   ├── SKILL.md
 │   └── references/
@@ -121,7 +121,7 @@ All Python 3, no external dependencies. Reference via `${CLAUDE_PLUGIN_ROOT}/scr
 
 ```bash
 # Test changes to this plugin
-claude --plugin-dir ./claude-extension-toolkit
+claude --plugin-dir ./agent-extension-toolkit
 
 # Reload after edits (no restart needed)
 /reload-plugins
